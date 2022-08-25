@@ -1,8 +1,7 @@
-namespace VoeAirlines.Entitles.Enums{
+namespace VoeAirline.Entities.Enum;
 
     public enum TipoManutencao{
       Preventiva,
       Corretiva
     }
 
-}

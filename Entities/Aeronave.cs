@@ -1,6 +1,6 @@
-namespace VoeAirline.Entitites{
+namespace VoeAirline.Entities;
   public class Aeronave {
-    public Aeronave (string fabricante, string modelo, string coigo){
+    public Aeronave (string fabricante, string modelo, string codigo){
         Fabricante = fabricante;
         Modelo = modelo;
         Codigo = codigo;
@@ -9,10 +9,9 @@ namespace VoeAirline.Entitites{
     public string Fabricante {get; set;}
     public string Modelo { get; set;}
     public string Codigo {get; set;}
-
+    public string Celebridade {get; set;}
+    
     public ICollection<Manutencao> Manutencoes {get; set; }=null!;
-
-    public ICollection<Voo> Voos { get; set; }
+    public ICollection<Voo> Voos { get; set; }=null!;
   }
 
-}

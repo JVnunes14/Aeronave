@@ -1,14 +1,15 @@
-using VoeAirlines.Entitites.Enums;
+using VoeAirline.Entities.Enum;
 
-namespace VoeAirline.Entitites {
+namespace VoeAirline.Entities;
     public class Manutencao {
-    public Manutencao (DateTime DataHora, TipoManutencao tipo, int aeronaveId ,string? Observacoes=null )
+    public Manutencao(DateTime dataHora, string observacoes, TipoManutencao tipo, int aeronaveId)
     {
-       DateTime = datetime;
-       Observacoes = observacoes;
-       Tipo = tipo;
-       AeronaveId = aeronaveId;
+        DataHora = dataHora;
+        Observacoes = observacoes;
+        Tipo = tipo;
+        AeronaveId = aeronaveId;
     }
+
     public int Id {get; set; }
     public DateTime  DataHora { get; set;}
     public string Observacoes { get; set;}
@@ -18,5 +19,4 @@ namespace VoeAirline.Entitites {
 
     public Aeronave Aeronave {get; set;}=null!;
     
-    }
 }
