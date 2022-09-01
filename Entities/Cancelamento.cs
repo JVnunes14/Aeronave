@@ -1,4 +1,4 @@
-namespace VoeAirline.Entities;
+namespace VoeAirlines.Entities;
 
 public class Cancelamento {
     public Cancelamento(string motivo, DateTime dataHoraNotificacao, int vooId)

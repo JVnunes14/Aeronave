@@ -1,6 +1,6 @@
-using VoeAirline.Entities.Enum;
+using VoeAirlines.Entities.Enums;
 
-namespace VoeAirline.Entities;
+namespace VoeAirlines.Entities;
     public class Manutencao {
     public Manutencao(DateTime dataHora, string observacoes, TipoManutencao tipo, int aeronaveId)
     {

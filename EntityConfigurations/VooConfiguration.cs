@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using VoeAirline.Entities;
-namespace VoeAirline.EntityConfigurations;
+using VoeAirlines.Entities;
+namespace VoeAirlines.EntityConfigurations;
 
 public class VooConfiguration : IEntityTypeConfiguration<Voo>
 {

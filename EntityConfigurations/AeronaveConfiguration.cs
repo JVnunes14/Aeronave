@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using VoeAirline.Entities;
-namespace VoeAirline.EntityConfigurations;
+using VoeAirlines.Entities;
+namespace VoeAirlines.EntityConfigurations;
 
 public class AeronaveConfiguration : IEntityTypeConfiguration<Aeronave>
 {
@@ -18,9 +18,9 @@ public class AeronaveConfiguration : IEntityTypeConfiguration<Aeronave>
       builder.Property(a=>a.Codigo)
              .IsRequired()
              .HasMaxLength(25);
-      builder.Property(a=>a.Celebridade)
-             .IsRequired()
-             .HasMaxLength(40); 
+      builder.Property(a=>a.Tipo)
+             .IsRequired();
+ 
       builder.HasMany(a=>a.Manutencoes)
              .WithOne(m=>m.Aeronave)
              .HasForeignKey(m=>m.AeronaveId);

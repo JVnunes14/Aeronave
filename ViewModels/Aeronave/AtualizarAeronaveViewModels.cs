@@ -1,10 +1,11 @@
-
 using VoeAirlines.Entities.Enums;
+
 namespace VoeAirlines.ViewModels;
 
-public class DetalhesAeronaveViewModels
+public class AtualizarAeronaveViewModels
 {
-    public DetalhesAeronaveViewModels(int id, string fabricante, string modelo, string codigo,TipoAeronave tipo)
+    public AtualizarAeronaveViewModels(int id, string fabricante,
+     string modelo, string codigo, TipoAeronave tipo)
     {
         Id = id;
         Fabricante = fabricante;
@@ -17,6 +18,5 @@ public class DetalhesAeronaveViewModels
     public string Fabricante { get; set; }
     public string Modelo { get; set; }
     public string Codigo { get; set; }
-
-    public TipoAeronave Tipo { get; set; }
+    public TipoAeronave Tipo{ get; set; }
 }

@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using VoeAirline.Entities;
+using VoeAirlines.Entities;
+using VoeAirlines.EntityConfigurations;
+
 
 namespace VoeAirlines.Contexts;
 
